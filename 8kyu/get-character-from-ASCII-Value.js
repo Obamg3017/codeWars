@@ -11,3 +11,7 @@
 function getChar(c) {
   return String.fromCharCode(c);
 }
+
+const fullNum = 65;
+const swappedName = getChar(fullNum);
+console.log(swappedName);

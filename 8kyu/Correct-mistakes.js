@@ -9,6 +9,21 @@
 // I is misinterpreted as 1
 
 
-const correct = (string) => {
-  return string.replaceAll("0", "0").replaceAll("1", "I").replaceAll("5", "S")
-};
+// const correct = (string) => {
+//   return string.replaceAll("0", "0").replaceAll("1", "I").replaceAll("5", "S")
+// };
+
+function reverseArray(arr) {
+  const reversedArray = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversedArray.push(arr[i]);
+  }
+  return reversedArray;
+}
+
+// Example usage:
+const originalArray = [1, 2, 3, 4, 5];
+const reversedArray = reverseArray(originalArray);
+
+console.log("Original Array:", originalArray);
+console.log("Reversed Array:", reversedArray);
