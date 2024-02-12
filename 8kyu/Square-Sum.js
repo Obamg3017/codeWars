@@ -3,5 +3,10 @@
 // For example, for [1, 2, 2] it should return 9 
 
 const squareSum = (numbers) => {
-  
+  let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i] * numbers[i];
+  }
+
+  return result;
 };
